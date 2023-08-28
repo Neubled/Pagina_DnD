@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>barra de navegacion</title>
+    <link rel="stylesheet" href="./estilos.css" />
+
+  </head>
+
+    <body class="fondo">
+    <nav class="flex">
+      <div class="box">
+
+      
+          <img class="foto" src="DnD-Symbol.png" />
+          
+
+          <div class="contenedor">
+
+            <img class="foto3" src="lupita.png" />
+     <input class="buscador" placeholder="busca algo..." type="text" required />
+</div>
+   
+     
+     <div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn"> <img class="foto2" src="./3barras.png" /></button>
+  <div id="myDropdown" class="dropdown-content">
+
+     <div class="dropdown">
+  <button onclick="myClass()" class="dropbtn">Clases</button>
+    <div id="myDropdownClases" class="dropdown-content">
+    <a href="#" value="Barbarian">Barbaro</a>
+    <a href="#">Bardo</a>
+    <a href="#">Clerigo</a>
+    <a href="#">Druida</a>
+    <a href="#">Luchador</a>
+    <a href="#">Mago</a>
+    <a href="#">Monje</a>
+    <a href="#">Paladin</a>
+    <a href="#">Picaro</a>
+    <a href="#">Explorador</a>
+    <a href="#">Hechicero</a>
+    <a href="#">Brujo</a>
+</div>
+  </div>
+ 
+       <div class="dropdown">
+  <button onclick="myRaces()" class="dropbtn"> Razas</button>
+    <div id="myDropdownRazas" class="dropdown-content">
+    <a href="#">Draconido</a>
+    <a href="#">Enano</a>
+    <a href="#">Elfo</a>
+    <a href="#">Gnomo</a>
+    <a href="#">Medio-Elfo</a>
+    <a href="#">Medio-Orco</a>
+    <a href="#">Mediano</a>
+    <a href="#">Humano</a>
+    <a href="#">tiefling</a>
+  
+</div>
+  </div>
+  
+
+
+  </div>
+  </div>
+
+
+    
+        </div>
+
+   
+       
+        </button>
+      </div>
+    </nav>
+
+   <nav class="flex">
+       <div class="fondo_img">
+        <div class="texto_bienvenida"> 
+            <div class="texto_bienvenida"> 
+        <strong class="texto_strong">¡Bienvenidos a nuestro Portal de Creadores de Personajes de Dungeons & Dragons!</strong>
+        <span class="texto_span">Sumérgete en un mundo de fantasía épica y aventuras inolvidables mientras das vida a tus héroes. Nuestra plataforma está diseñada para ayudarte a dar vida a tus personajes más intrépidos, desde valientes guerreros hasta astutos hechiceros y todos sus secretos. </span>
+          </div>
+        <span class="texto_span2">¿Listo para forjar tu leyenda? Nuestra herramienta de creación de personajes te brinda el poder de personalizar cada detalle, desde la raza y la clase hasta las habilidades únicas.</span>
+        </div>
+        <button onclick="myFunction()" class="boton_ficha" id="btnirFicha">Creador de personaje</button>
+      </div>
+
+
+</nav>
+
+     <script src="acciones.js"></script>
+
+
+     
+  </body>
+</html>

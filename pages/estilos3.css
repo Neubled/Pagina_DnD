@@ -1,0 +1,207 @@
+.fondo {
+  background: rgba(21, 21, 21, 0.991);
+  background-repeat: repeat-x;
+  /* height: 100vh;
+  width: 100vw; */
+}
+.box {
+  display: flex;
+  position: sticky;
+  justify-content: space-between;
+  top: 0;
+  /* width: 100vw; */
+  height: 7vh;
+  padding: 10px 0px;
+  align-content: center;
+  align-items: center;
+  border-bottom: #d40404 2px solid;
+  padding-bottom: 10px;
+}
+.foto {
+  position: relative;
+  width: 80px;
+  height: 60px;
+}
+.foto2 {
+  width: 20px;
+  height: 10px;
+}
+.foto3 {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.contenedor {
+  width: 500px;
+  display: flex;
+  align-items: center;
+}
+
+.buscador {
+  position: relative;
+  background: rgba(21, 21, 21, 0.991);
+  width: 80%;
+  height: 50px;
+  font-family: poppins, sans-serif;
+  padding-left: 16px;
+  flex-shrink: initial;
+  border-radius: 30px;
+  padding: 1px 2px 1px 34px;
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  border: black;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  margin-top: 30px;
+}
+
+.contenedor_dos {
+  width: 500px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contenedor_tres {
+  width: 500px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.cuadrado_uno span {
+  height: 100%;
+}
+
+.cuadrado_uno {
+  flex-grow: 1;
+  background: rgba(97, 97, 97, 0.991);
+  background-repeat: repeat-x;
+  height: 100%;
+  width: 100%;
+  border: 10px solid rgba(40, 39, 39, 0.822);
+}
+
+.cuadrado_dos {
+  background: rgba(97, 97, 97, 0.991);
+  background-repeat: repeat-x;
+  height: 100%;
+  width: 100%;
+  border: 10px solid rgba(40, 39, 39, 0.822);
+}
+
+.cuadrado_tres {
+  background: rgba(97, 97, 97, 0.991);
+  background-repeat: repeat-x;
+
+  border: 10px solid rgba(40, 39, 39, 0.822);
+}
+
+.cuadrado_cuatro {
+  background: rgba(97, 97, 97, 0.991);
+  background-repeat: repeat-x;
+
+  border: 10px solid rgba(40, 39, 39, 0.822);
+}
+
+.cuadrado_cinco {
+  background: rgba(97, 97, 97, 0.991);
+  background-repeat: repeat-x;
+
+  border: 10px solid rgba(40, 39, 39, 0.822);
+}
+
+.cuadrado_seis {
+  background: rgba(97, 97, 97, 0.991);
+  background-repeat: repeat-x;
+
+  border: 10px solid rgba(40, 39, 39, 0.822);
+}
+
+.cuadrado_siete {
+  background: rgba(97, 97, 97, 0.991);
+  background-repeat: repeat-x;
+
+  border: 10px solid rgba(40, 39, 39, 0.822);
+}
+
+.cuadrado_ocho {
+  background: rgba(97, 97, 97, 0.991);
+  background-repeat: repeat-x;
+
+  border: 10px solid rgba(40, 39, 39, 0.822);
+}
+
+.cuadrado_nueve {
+  background: rgba(97, 97, 97, 0.991);
+  background-repeat: repeat-x;
+
+  border: 10px solid rgba(40, 39, 39, 0.822);
+}
+
+.cuadrado_diez {
+  background: rgba(97, 97, 97, 0.991);
+  background-repeat: repeat-x;
+
+  border: 10px solid rgba(40, 39, 39, 0.822);
+}
+
+/*------------------------
+
+/* Dropdown Button */
+.dropbtn {
+  position: relative;
+  background-color: #e30101;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover,
+.dropbtn:focus {
+  background-color: #d40404;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  right: 0px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+  display: block;
+}
