@@ -23,23 +23,66 @@
      <input class="buscador" placeholder="busca algo..." type="text" required />
 </div>
      
-   <div class="dropdown">
+   
+     <div class="dropdown">
   <button onclick="myFunction()" class="dropbtn"> <img class="foto2" src="../3barras.png" /></button>
   <div id="myDropdown" class="dropdown-content">
-    <a href="#">Link 1</a>
-    <a href="#">Link 2</a>
-    <a href="#">Link 3</a>
+
+     <div class="dropdown">
+  <button onclick="myClass()" class="dropbtn">Clases</button>
+    <div id="myDropdownClases" class="dropdown-content">
+    <a href="#" value="barbarian">Barbaro</a>
+    <a href="#" value="bard">Bardo</a>
+    <a href="#" value="cleric">Clerigo</a>
+    <a href="#" value="druid">Druida</a>
+    <a href="#" value="fighter">Luchador</a>
+    <a href="#" value="wizard">Mago</a>
+    <a href="#" value="monk">Monje</a>
+    <a href="#" value="paladin">Paladin</a>
+    <a href="#" value="rogue">Picaro</a>
+    <a href="#" value="ranger">Explorador</a>
+    <a href="#" value="sorcerer">Hechicero</a>
+    <a href="#" value="warlock">Brujo</a>
+</div>
   </div>
+ 
+       <div class="dropdown">
+  <button onclick="myRaces()" class="dropbtn"> Razas</button>
+    <div id="myDropdownRazas" class="dropdown-content">
+    <a href="#"  value="dragonborn">Draconido</a>
+    <a href="#" value="dwarf">Enano</a>
+    <a href="#" value="elf">Elfo</a>
+    <a href="#" value="gnome">Gnomo</a>
+    <a href="#"  value="half-elf">Medio-Elfo</a>
+    <a href="#" value="half-orc">Medio-Orco</a>
+    <a href="#" value="halfling">Mediano</a>
+    <a href="#" value="human">Humano</a>
+    <a href="#" value="tiefling">tiefling</a>
+  
+</div>
+  </div>
+  
+
+
+  </div>
+  </div>
+
 
 
 </nav>
 
 <div class="parent">
-<div class="logos_clases"> </div>
-<div class="indice"> </div>
-<div class="titulo"> </div>
-<div class="informacion">hola buenos dias </div>
+<div class="logos_clases">
+ <img class="foto4" src="../clases/barbaro.jpg"> 
 </div>
+<div class="indice"> </div>
+<div class="titulo", title.innerHTML, id="nombreClase"></div>
+<div class="informacion",id="descripcionClase"></div>
+</div>
+
+  
+
+
 
      <script src="acciones-2.js"></script>
   </body>

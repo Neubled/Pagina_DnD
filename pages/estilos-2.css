@@ -33,7 +33,13 @@
   height: 30px;
   margin-right: 10px;
 }
-
+.foto4 {
+  margin-top: 20px;
+  margin-left: 90px;
+  width: 300px;
+  height: 300px;
+  margin-right: 10px;
+}
 .contenedor {
   width: 500px;
   display: flex;
@@ -65,6 +71,7 @@
   font-size: 16px;
   border: none;
   cursor: pointer;
+  width: 100px;
 }
 
 /* Dropdown button on hover & focus */
@@ -84,7 +91,7 @@
   display: none;
   position: absolute;
   background-color: #f1f1f1;
-  min-width: 160px;
+  width: 100px;
   right: 0px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;

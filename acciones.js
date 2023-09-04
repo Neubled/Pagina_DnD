@@ -1,3 +1,5 @@
+const URL = "http://www.dnd5eapi.co/api";
+
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
 function myFunction() {
@@ -30,7 +32,7 @@ function myRaces() {
 
 document.getElementById("btnirFicha").addEventListener("click", function () {
   // Redirigir al otro index
-  window.location.href = "../Ficha.html";
+  window.location.href = "/pages/Ficha.html";
 });
 
 //----------------------------------------------------------------------
@@ -73,38 +75,7 @@ function loadInfo() {
   setInfo("info");
 }
 
-function loadClases() {
-  window.location.hash = "claes";
-  setInfo("claes");
-}
-
-function loadRaces() {
-  window.location.hash = "Races";
-  setInfo("Races");
-}
-
-function loadBarbarian() {
-  window.location.hash = "Barbarian";
-  setInfo("Barbarian");
-}
-
-function setInfo(info) {
-  let result = {};
-  // Agregar Fetch a la API
-  if (info === "info") {
-    result = { titulo: "Informacion", img: "Imagen informativa" };
-  } else {
-    result = { titulo: "Barbarian", img: "barbaro.jpg" };
-  }
-
-  // Cambiar ese IF por llamada a la API
-
-  const title = document.querySelector("#title");
-  const img = document.querySelector("#img");
-
-  title.innerHTML = result.titulo;
-  img.innerHTML = result.img;
-}
+// Cambiar ese IF por llamada a la API
 
 // Función para manejar el cambio de rutas
 function handleRoute() {
@@ -120,3 +91,28 @@ function handleRoute() {
 // Evento para manejar el cambio de rutas al cargar la página
 // Aquí puedes invocar handleRoute() para cargar la página predeterminada al inicio
 //   window.addEventListener("load", handleRoute);
+
+document
+  .getElementById("myDropdownClases")
+  .addEventListener("click", function () {
+    // Redirigir al otro index
+    window.location.href = "/pages/pg2.html#barbarian";
+  });
+
+function loadAll() {
+  window.location.hash = "barbarian";
+  handleAll("");
+}
+
+function handleAll() {
+  let hash = window.location.hash.substr(1);
+  let path = `pages/pg2.html#${hash}`;
+  location.href = path;
+}
+
+document
+  .getElementById("myDropdownRazas")
+  .addEventListener("click", function () {
+    // Redirigir al otro index
+    window.location.href = "/pages/pg2.html";
+  });
