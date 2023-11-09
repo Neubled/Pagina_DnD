@@ -3,6 +3,7 @@
   background-repeat: repeat-x;
   /* height: 100vh;
   width: 100vw; */
+  overflow-x: hidden;
 }
 .box {
   display: flex;
@@ -17,6 +18,7 @@
   border-bottom: #d40404 2px solid;
   padding-bottom: 10px;
 }
+
 .foto {
   position: relative;
   width: 80px;
@@ -31,7 +33,13 @@
   height: 30px;
   margin-right: 10px;
 }
+.foto4 {
+  grid-column-start: 2;
+  margin-top: 20px;
 
+  width: 200px;
+  height: 200px;
+}
 .contenedor {
   width: 500px;
   display: flex;
@@ -51,6 +59,64 @@
   color: rgb(255, 255, 255);
   font-size: 18px;
   border: black;
+}
+/*------------------------
+
+/* Dropdown Button */
+.dropbtn {
+  position: relative;
+  background-color: #e30101;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  width: 100px;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover,
+.dropbtn:focus {
+  background-color: #d40404;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  width: 100px;
+  right: 0px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+  display: block;
+}
+
+.parent {
+  display: grid;
 }
 
 main {
@@ -259,22 +325,16 @@ h1 {
 }
 
 .nombre-raza-clase {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-content: flex-start;
   margin-bottom: 20px;
+  margin-right: 10px;
 }
 .apellido-subraza-subclase {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-content: flex-start;
   margin-bottom: 20px;
+  margin-right: 10px;
 }
 
-.nombre-raza-clase label {
-  margin-right: 10px;
+.informcion_rc {
+  display: flex;
 }
 
 .atributos h2,
@@ -287,8 +347,9 @@ h1 {
   flex-direction: column;
   align-items: flex-start;
   margin-bottom: 10px;
-  width: 50px;
-  height: 50px;
+  width: 80px;
+  height: 80px;
+  padding-left: 10px;
 }
 
 .otros-detalles {
@@ -306,4 +367,163 @@ input[type="number"] {
   width: 100%;
   padding: 5px;
   margin-right: 10px;
+}
+
+.info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.parent {
+  display: grid;
+  grid-template-columns: repeat(5, 230px);
+  grid-template-rows: repeat(5, 150px);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.esstadisticas {
+  grid-area: 1 / 1 / 5 / 2;
+}
+.info-general {
+  grid-area: 1 / 2 / 2 / 6;
+  display: flex;
+  align-items: center;
+}
+.proficiencias {
+  grid-area: 2 / 2 / 4 / 3;
+}
+.Bg {
+  grid-area: 2 / 5 / 6 / 6;
+}
+.Spells {
+  grid-area: 4 / 2 / 6 / 3;
+}
+.ac {
+  grid-area: 2 / 3 / 3 / 5;
+  display: flex;
+  width: 50px;
+  height: 50px;
+  gap: 35px;
+}
+.hp {
+  grid-area: 3 / 3 / 4 / 5;
+}
+
+.Salvaciones {
+  grid-area: 4 / 3 / 5 / 5;
+  display: flex;
+  gap: 100px;
+  align-items: center;
+}
+
+.Feat {
+  grid-area: 5 / 3 / 6 / 5;
+}
+
+.Tamaño_I {
+  width: 0px;
+}
+
+#data {
+  width: 100px;
+}
+
+#proficiencias {
+  height: 250px;
+  width: 200px;
+  font-size: 16px;
+}
+
+#Bg {
+  height: 600px;
+  width: 300px;
+  font-size: 16px;
+}
+
+#Spells {
+  height: 299px;
+  width: 200px;
+  font-size: 16px;
+}
+
+#Feat {
+  width: 430px;
+  height: 146px;
+  font-size: 16px;
+}
+
+#hp {
+  width: 430px;
+  height: 90px;
+  font-size: 20px;
+}
+
+#ac {
+  width: 60px;
+  height: 60px;
+  font-size: 20px;
+}
+
+#level {
+  width: 60px;
+  height: 60px;
+  font-size: 20px;
+}
+
+#iniciativa {
+  width: 60px;
+  height: 60px;
+  font-size: 20px;
+}
+
+#estadisticas {
+  width: 60px;
+  height: 60px;
+  font-size: 20px;
+}
+
+#salva {
+  width: 30px;
+  height: 30px;
+}
+
+.salva_btn {
+  display: flex;
+}
+.hidden {
+  display: none !important;
+}
+.dropdownbuscador {
+  position: absolute;
+  right: 500px;
+}
+
+.dropdown-serch {
+  position: absolute;
+  background-color: #f1f1f1;
+  width: 300px;
+  top: 30px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  overflow-y: scroll;
+  max-height: 200px;
+}
+
+#subrazas_op {
+  height: 30px;
+  width: 130px;
+}
+
+#razas_op {
+  height: 30px;
+}
+
+#subclases_op {
+  height: 30px;
+  width: 130px;
+}
+
+#clases_op {
+  height: 30px;
 }

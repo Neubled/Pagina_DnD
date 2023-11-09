@@ -6,167 +6,243 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>barra de navegacion</title>
     <link rel="stylesheet" href="./estilos3.css" />
-    <script src="../acciones.js"></script>
-
   </head>
 
-      <body class="fondo">
+  <body class="fondo">
     <nav class="flex">
       <div class="box">
+        <img id="btnirinicio" class="foto" src="../DnD-Symbol.png" />
 
-      
-          <img class="foto" src="../DnD-Symbol.png" />
-          
-
-          <div class="contenedor">
-
-            <img class="foto3" src="../lupita.png" />
-     <input class="buscador" placeholder="busca algo..." type="text" required />
-</div>
-   
-     
-     <div class="dropdown">
-  <button onclick="myFunction()" class="dropbtn"> <img class="foto2" src="../3barras.png" /></button>
-  <div id="myDropdown" class="dropdown-content">
-
-     <div class="dropdown">
-  <button onclick="myClass()" class="dropbtn">Clases</button>
-    <div id="myDropdownClases" class="dropdown-content">
-    <a href="#" value="barbarian">Barbaro</a>
-    <a href="#" value="bard">Bardo</a>
-    <a href="#" value="cleric">Clerigo</a>
-    <a href="#" value="druid">Druida</a>
-    <a href="#" value="fighter">Luchador</a>
-    <a href="#" value="wizard">Mago</a>
-    <a href="#" value="monk">Monje</a>
-    <a href="#" value="paladin">Paladin</a>
-    <a href="#" value="rogue">Picaro</a>
-    <a href="#" value="ranger">Explorador</a>
-    <a href="#" value="sorcerer">Hechicero</a>
-    <a href="#" value="warlock">Brujo</a>
-</div>
-  </div>
- 
-       <div class="dropdown">
-  <button onclick="myRaces()" class="dropbtn"> Razas</button>
-    <div id="myDropdownRazas" class="dropdown-content">
-    <a href="#"  value="dragonborn">Draconido</a>
-    <a href="#" value="dwarf">Enano</a>
-    <a href="#" value="elf">Elfo</a>
-    <a href="#" value="gnome">Gnomo</a>
-    <a href="#"  value="half-elf">Medio-Elfo</a>
-    <a href="#" value="half-orc">Medio-Orco</a>
-    <a href="#" value="halfling">Mediano</a>
-    <a href="#" value="human">Humano</a>
-    <a href="#" value="tiefling">tiefling</a>
-  
-</div>
-  </div>
-  
-
-
-  </div>
-  </div>
-
-
-    
+        <div class="contenedor">
+          <img class="foto3" src="../lupita.png" />
+          <input
+            class="buscador"
+            placeholder="busca algo..."
+            type="search"
+            required
+          />
+          <div class="dropdownbuscador">
+            <div id="myDropdownSerch" class="dropdown-content dropdown-serch">
+              <a class="btnC" href="#" id="barbarian">Barbaro</a>
+              <a class="btnC" href="#" id="bard">Bardo</a>
+              <a class="btnC" href="#" id="cleric">Clerigo</a>
+              <a class="btnC" href="#" id="druid">Druida</a>
+              <a class="btnC" href="#" id="fighter">Luchador</a>
+              <a class="btnC" href="#" id="wizard">Mago</a>
+              <a class="btnC" href="#" id="monk">Monje</a>
+              <a class="btnC" href="#" id="paladin">Paladin</a>
+              <a class="btnC" href="#" id="rogue">Picaro</a>
+              <a class="btnC" href="#" id="ranger">Explorador</a>
+              <a class="btnC" href="#" id="sorcerer">Hechicero</a>
+              <a class="btnC" href="#" id="warlock">Brujo</a>
+              <a class="btnR" href="#" id="dragonborn">Draconido</a>
+              <a class="btnR" href="#" id="dwarf">Enano</a>
+              <a class="btnR" href="#" id="elf">Elfo</a>
+              <a class="btnR" href="#" id="gnome">Gnomo</a>
+              <a class="btnR" href="#" id="half-elf">Medio-Elfo</a>
+              <a class="btnR" href="#" id="half-orc">Medio-Orco</a>
+              <a class="btnR" href="#" id="halfling">Mediano</a>
+              <a class="btnR" href="#" id="human">Humano</a>
+              <a class="btnR" href="#" id="tiefling">tiefling</a>
+            </div>
+          </div>
         </div>
 
-   
-       
-        </button>
+        <div class="dropdown">
+          <button onclick="myDropdown_opt()" class="dropbtn">
+            <img class="foto2" src="../3barras.png" />
+          </button>
+          <div id="myDropdown" class="dropdown-content">
+            <div class="dropdown">
+              <button onclick="myClass()" class="dropbtn">Clases</button>
+              <div id="myDropdownClases" class="dropdown-content">
+                <a class="btnC" href="#" id="barbarian">Barbaro</a>
+                <a class="btnC" href="#" id="bard">Bardo</a>
+                <a class="btnC" href="#" id="cleric">Clerigo</a>
+                <a class="btnC" href="#" id="druid">Druida</a>
+                <a class="btnC" href="#" id="fighter">Luchador</a>
+                <a class="btnC" href="#" id="wizard">Mago</a>
+                <a class="btnC" href="#" id="monk">Monje</a>
+                <a class="btnC" href="#" id="paladin">Paladin</a>
+                <a class="btnC" href="#" id="rogue">Picaro</a>
+                <a class="btnC" href="#" id="ranger">Explorador</a>
+                <a class="btnC" href="#" id="sorcerer">Hechicero</a>
+                <a class="btnC" href="#" id="warlock">Brujo</a>
+              </div>
+            </div>
+
+            <div class="dropdown">
+              <button onclick="myRaces()" class="dropbtn">Razas</button>
+              <div id="myDropdownRazas" class="dropdown-content">
+                <a class="btnR" href="#" id="dragonborn">Draconido</a>
+                <a class="btnR" href="#" id="dwarf">Enano</a>
+                <a class="btnR" href="#" id="elf">Elfo</a>
+                <a class="btnR" href="#" id="gnome">Gnomo</a>
+                <a class="btnR" href="#" id="half-elf">Medio-Elfo</a>
+                <a class="btnR" href="#" id="half-orc">Medio-Orco</a>
+                <a class="btnR" href="#" id="halfling">Mediano</a>
+                <a class="btnR" href="#" id="human">Humano</a>
+                <a class="btnR" href="#" id="tiefling">tiefling</a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </nav>
 
-
-     <div class="ficha">
-        <div class="cabecera">
-            <h1>Ficha de Personaje</h1>
-        </div>
-        <div class="nombre-raza-clase">
-            <div class="nombre">
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre">
-            </div>
-            <div class="raza">
-                <label for="raza">Raza:</label>
-                <input type="text" id="raza">
-            </div>
-            <div class="clase">
-                <label for="clase">Clase:</label>
-                <input type="text" id="clase">
-            </div>
-         </div>
-          <div class="apellido-subraza-subclase ">
-            <div class="apellido">
-                <label for="apellido">apellido:</label>
-                <input type="text" id="apellido">
-            </div>
-            <div class="subraza">
-                <label for="subraza">subraza:</label>
-                <input type="text" id="subraza">
-            </div>
-            <div class="subclase">
-                <label for="subclase">subclase:</label>
-                <input type="text" id="subclase">
-            </div>
-        </div>
-       
+    <div class="parent">
+      <div class="esstadisticas">
         <div class="atributos">
-            <h2>Atributos</h2>
-            <div class="atributo">
-                <label for="fuerza">Fuerza:</label>
-                <input type="number" id="fuerza" min="1" max="20">
-            </div>
-            <div class="atributo">
-                <label for="destreza">Destreza:</label>
-                <input type="number" id="destreza" min="1" max="20">
-            </div>
-                 <div class="atributo">
-                <label for="constitucion">constitucion:</label>
-                <input type="number" id="constitucion" min="1" max="20">
-            </div>
-                 <div class="atributo">
-                <label for="inteligencia">inteligencia:</label>
-                <input type="number" id="inteligencia" min="1" max="20">
-            </div>
-                 <div class="atributo">
-                <label for="sabiduria">sabiduria:</label>
-                <input type="number" id="sabiduria" min="1" max="20">
-            </div>
-                 <div class="atributo">
-                <label for="carisma">carisma:</label>
-                <input type="number" id="carisma" min="1" max="20">
-            </div>
+          <h2>Atributos</h2>
+          <div class="atributo">
+            <label for="fuerza">Fuerza:</label>
+            <input type="number" id="estadisticas" min="1" max="20" />
+          </div>
+          <div class="atributo">
+            <label for="destreza">Destreza:</label>
+            <input type="number" id="estadisticas" min="1" max="20" />
+          </div>
+          <div class="atributo">
+            <label for="constitucion">constitucion:</label>
+            <input type="number" id="estadisticas" min="1" max="20" />
+          </div>
+          <div class="atributo">
+            <label for="inteligencia">inteligencia:</label>
+            <input type="number" id="estadisticas" min="1" max="20" />
+          </div>
+          <div class="atributo">
+            <label for="sabiduria">sabiduria:</label>
+            <input type="number" id="estadisticas" min="1" max="20" />
+          </div>
+          <div class="atributo">
+            <label for="carisma">carisma:</label>
+            <input type="number" id="estadisticas" min="1" max="20" />
+          </div>
         </div>
-        <div class="otros-detalles">
-            <div class="proficiencias">
-                <h2>Proficiencias</h2>
-                <!-- Agrega las proficiencias aquí -->
-            </div>
-            <div class="armor-iniciativa">
-                <div class="armor-clas">
-                    <label for="ac">Armor Class (AC):</label>
-                    <input type="number" id="ac">
-                </div>
-                <div class="iniciativa">
-                    <label for="iniciativa">Iniciativa:</label>
-                    <input type="number" id="iniciativa">
-                </div>
-            </div>
-            <div class="nivel-vida">
-                <div class="nivel">
-                    <label for="nivel">Nivel:</label>
-                    <input type="number" id="nivel" min="1">
-                </div>
-                <div class="vida">
-                    <label for="vida">Vida:</label>
-                    <input type="number" id="vida" min="0">
-                </div>
-            </div>
+      </div>
+
+      <div class="info-general">
+        <div class="nombre">
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="data" />
         </div>
+
+        <div class="apellido">
+          <label for="apellido">apellido:</label>
+          <input type="text" id="data" />
+        </div>
+        <div class="raza">
+          <label for="raza">Raza:</label>
+          <select name="raza" id="razas_op">
+            <option value="">seleccione una raza</option>
+            <option value="bdragonborn">draconido</option>
+            <option value=" elf">elfo</option>
+            <option value="  dwarf">Enano</option>
+            <option value=" gnome">Gnomo</option>
+            <option value=" human">Humano</option>
+            <option value=" halfling">mediano</option>
+            <option value="half-elf">Medio-Elfo</option>
+            <option value="half-orc">Medio-Orco</option>
+            <option value="tiefling">tiefling</option>
+          </select>
+        </div>
+
+        <div class="subraza">
+          <label for="subraza">subraza:</label>
+          <select id="subrazas_op"></select>
+        </div>
+        <div class="clase">
+          <label for="clase"> Clase:</label>
+          <select name="clase" id="clases_op">
+            <option value="">seleccione una clase</option>
+            <option value="barbarian">barbarbaro</option>
+            <option value="bard">bardo</option>
+            <option value="cleric">clerigo</option>
+            <option value="druid">druida</option>
+            <option value="fighter">luchador</option>
+            <option value="monk">monje</option>
+            <option value="paladin">paladin</option>
+            <option value="ranger">explorador</option>
+            <option value="rogue">picaro</option>
+            <option value="sorcerer">Hechicero</option>
+            <option value="warlock">brujo</option>
+            <option value="wizard">mago</option>
+          </select>
+        </div>
+
+        <div class="subclase">
+          <label for="subclase">subclase:</label>
+          <select name="subclase" id="subclases_op"></select>
+        </div>
+      </div>
+      <div class="proficiencias">
+        <label class="show" for="proficiencias">proficiencias:</label>
+        <textarea type="text" id="proficiencias"></textarea>
+      </div>
+      <div class="Bg">
+        <label class="show" for="Bg">background:</label>
+        <textarea type="text" id="Bg"></textarea>
+      </div>
+      <div class="Spells">
+        <label class="show" for="Spells">lista de Spells:</label>
+        <textarea type="text" id="Spells"></textarea>
+      </div>
+
+      <div class="ac">
+        <div>
+          <label class="show" for="ac">AC:</label>
+          <input class="show" type="number" id="ac" />
+        </div>
+        <div>
+          <label class="show" for="level">level:</label>
+          <input class="show" type="number" id="level" min="1" max="20" />
+        </div>
+        <div>
+          <label class="show" for="iniciativa">iniciativa:</label>
+          <input class="show" type="number" id="iniciativa" />
+        </div>
+        <div>
+          <label class="show" for="speed">speed:</label>
+          <input class="show" type="number" id="level" />
+        </div>
+      </div>
+      <div class="hp">
+        <label class="show" for="hp">Vida:</label>
+        <input type="number" id="hp" />
+      </div>
+      <div class="Salvaciones">
+        <div>
+          <div>
+            <label class="show" for="Salvaciones">Salvaciones correctas:</label>
+            <div class="salva_btn">
+              <input type="radio" id="salva" />
+
+              <input type="radio" id="salva" />
+
+              <input type="radio" id="salva" />
+            </div>
+          </div>
+        </div>
+        <div>
+          <div>
+            <label class="show" for="Salvaciones">Salvaciones fallidas:</label>
+            <div class="salva_btn">
+              <input type="radio" id="salva" />
+
+              <input type="radio" id="salva" />
+
+              <input type="radio" id="salva" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="Feat">
+        <label class="show" for="Feat">features:</label>
+        <textarea type="text" id="Feat"></textarea>
+      </div>
     </div>
- 
-        
+
+    <script src="../acciones.js"></script>
+    <script src="./acciones-ficha.js"></script>
   </body>
 </html>

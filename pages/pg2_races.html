@@ -5,16 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>barra de navegacion</title>
-    <link rel="stylesheet" href="./estilos.css" />
+    <link rel="stylesheet" href="./estilos-2.css" />
   </head>
 
   <body class="fondo">
     <nav class="flex">
       <div class="box">
-        <img id="btnirinicio" class="foto" src="DnD-Symbol.png" />
+        <img id="btnirinicio" class="foto" src="../DnD-Symbol.png" />
 
         <div class="contenedor">
-          <img class="foto3" src="lupita.png" />
+          <img class="foto3" src="../lupita.png" />
           <input
             class="buscador"
             placeholder="busca algo..."
@@ -50,7 +50,7 @@
 
         <div class="dropdown">
           <button onclick="myDropdown_opt()" class="dropbtn">
-            <img class="foto2" src="./3barras.png" />
+            <img class="foto2" src="../3barras.png" />
           </button>
           <div id="myDropdown" class="dropdown-content">
             <div class="dropdown">
@@ -90,33 +90,54 @@
       </div>
     </nav>
 
-    <nav class="flex">
-      <div class="fondo_img">
-        <div class="texto_bienvenida">
-          <div class="texto_bienvenida">
-            <strong class="texto_strong"
-              >¡Bienvenidos a nuestro Portal de Creadores de Personajes de
-              Dungeons & Dragons!</strong
-            >
-            <span class="texto_span"
-              >Sumérgete en un mundo de fantasía épica y aventuras inolvidables
-              mientras das vida a tus héroes. Nuestra plataforma está diseñada
-              para ayudarte a dar vida a tus personajes más intrépidos, desde
-              valientes guerreros hasta astutos hechiceros y todos sus secretos.
-            </span>
-          </div>
-          <span class="texto_span2"
-            >¿Listo para forjar tu leyenda? Nuestra herramienta de creación de
-            personajes te brinda el poder de personalizar cada detalle, desde la
-            raza y la clase hasta las habilidades únicas.</span
-          >
-        </div>
-        <button onclick="myDropdown_opt()" class="boton_ficha" id="btnirFicha">
-          Creador de personaje
+    <div class="parent">
+      <div class="logos_clases"></div>
+      <div class="indice">
+        <button
+          onclick='window.scroll({top: 300, behavior: "smooth"})'
+          class="btnIndice"
+        >
+          informacion
+        </button>
+        <button
+          onclick='window.scroll({top: 450, behavior: "smooth"})'
+          class="btnIndice"
+        >
+          proficiencies
+        </button>
+        <button
+          onclick='window.scroll({top: 8900, behavior: "smooth"})'
+          class="btnIndice"
+        >
+          traits
         </button>
       </div>
-    </nav>
+      <div class="titulo" id="nombreRaza"></div>
+      <div class="informacion" id="content">
+        <div class="subcrace_informacion" id="subrs"></div>
+        <br />
+        <div class="subcrace_informacion" id="DataAttribute"></div>
 
-    <script src="acciones.js"></script>
+        <table class="tabla_classes">
+          <thead>
+            <tr id="head"></tr>
+          </thead>
+          <tbody id="body"></tbody>
+        </table>
+
+        <div class="ProfSpell_informacion" class="lista">
+          <strong class="Cprof">proficiencies</strong>
+          <ul id="prof"></ul>
+        </div>
+
+        <div class="ProfSpell_informacion" class="lista">
+          <strong class="Cprof">traits</strong>
+          <ul id="trt"></ul>
+        </div>
+      </div>
+    </div>
+
+    <script src="acciones-Razas.js"></script>
+    <script src="../acciones.js"></script>
   </body>
 </html>
